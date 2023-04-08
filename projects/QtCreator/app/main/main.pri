@@ -80,6 +80,11 @@ $${NADIR_SRC}/xos/app/console/framework/version/main.hpp \
 $${NADIR_SRC}/xos/app/console/nadir/main_opt.hpp \
 $${NADIR_SRC}/xos/app/console/nadir/main.hpp \
 \
+$${NADIR_SRC}/xos/app/framework/base/main_opt.hpp \
+$${NADIR_SRC}/xos/app/framework/base/main.hpp \
+$${NADIR_SRC}/xos/app/framework/client/main_opt.hpp \
+$${NADIR_SRC}/xos/app/framework/client/main.hpp \
+\
 $${NADIR_SRC}/xos/app/nadir/base/main_opt.hpp \
 $${NADIR_SRC}/xos/app/nadir/base/main.hpp \
 $${NADIR_SRC}/xos/app/nadir/client/main_opt.hpp \
@@ -90,8 +95,8 @@ $${NADIR_SRC}/xos/app/nadir/main.hpp \
 # main SOURCES
 #
 main_SOURCES += \
-$${NADIR_SRC}/xos/app/nadir/main_opt.cpp \
-$${NADIR_SRC}/xos/app/nadir/main.cpp \
+$${NADIR_SRC}/xos/app/framework/client/main_opt.cpp \
+$${NADIR_SRC}/xos/app/framework/client/main.cpp \
 
 ########################################################################
 # main FRAMEWORKS

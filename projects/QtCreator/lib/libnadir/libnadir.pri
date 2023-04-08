@@ -16,14 +16,14 @@
 #   File: libnadir.pri
 #
 # Author: $author$
-#   Date: 1/19/2023
+#   Date: 3/1/2023
 #
-# generic QtCreator project file for nulucidity framework nadir static library libnadir
+# generic QtCreator project file for numachinae framework nadir static library libnadir
 ########################################################################
 
 ########################################################################
 # libnadir
-XOS_LIB_NADIR_VERSION_BUILD_DATE = 1/19/2023 #$$system(~/bin/utility/tdate)
+XOS_LIB_NADIR_VERSION_BUILD_DATE = 3/1/2023 #$$system(~/bin/utility/tdate)
 
 # libnadir TARGET
 #

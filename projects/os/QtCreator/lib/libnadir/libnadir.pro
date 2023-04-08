@@ -16,9 +16,9 @@
 #   File: libnadir.pro
 #
 # Author: $author$
-#   Date: 1/19/2023
+#   Date: 3/1/2023
 #
-# os specific QtCreator project .pro file for nulucidity framework nadir static library libnadir
+# os specific QtCreator project .pro file for numachinae framework nadir static library libnadir
 ########################################################################
 # Depends: rostra;fila;crono
 #

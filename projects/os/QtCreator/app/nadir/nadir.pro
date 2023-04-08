@@ -16,9 +16,9 @@
 #   File: nadir.pro
 #
 # Author: $author$
-#   Date: 1/19/2023
+#   Date: 3/1/2023
 #
-# os specific QtCreator project .pro file for nulucidity framework nadir executable nadir
+# os specific QtCreator project .pro file for numachinae framework nadir executable nadir
 ########################################################################
 # Depends: rostra;fila;crono
 #
