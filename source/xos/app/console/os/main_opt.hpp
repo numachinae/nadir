@@ -132,6 +132,350 @@ protected:
         return err;
     }
 
+    /// ...windows_run
+    virtual int windows_run(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        return err;
+    }
+    virtual int before_windows_run(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        return err;
+    }
+    virtual int after_windows_run(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        return err;
+    }
+    virtual int all_windows_run(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        if (!(err = before_windows_run(argc, argv, env))) {
+            int err2 = 0;
+            err = windows_run(argc, argv, env);
+            if ((err2 = after_windows_run(argc, argv, env))) {
+                if (!(err)) err = err2;
+            }
+        }
+        return err;
+    }
+    virtual int set_windows_run(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        run_ = &derives::all_windows_run;
+        return err;
+    }
+    virtual int windows_run_set(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        return err;
+    }
+    virtual int unset_windows_run(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        run_ = 0;
+        return err;
+    }
+    virtual int windows_run_unset(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        return err;
+    }
+
+    /// ...osx_run
+    virtual int osx_run(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        return err;
+    }
+    virtual int before_osx_run(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        return err;
+    }
+    virtual int after_osx_run(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        return err;
+    }
+    virtual int all_osx_run(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        if (!(err = before_osx_run(argc, argv, env))) {
+            int err2 = 0;
+            err = osx_run(argc, argv, env);
+            if ((err2 = after_osx_run(argc, argv, env))) {
+                if (!(err)) err = err2;
+            }
+        }
+        return err;
+    }
+    virtual int set_osx_run(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        run_ = &derives::all_osx_run;
+        return err;
+    }
+    virtual int osx_run_set(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        return err;
+    }
+    virtual int unset_osx_run(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        run_ = 0;
+        return err;
+    }
+    virtual int osx_run_unset(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        return err;
+    }
+
+    /// ...solaris_run
+    virtual int solaris_run(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        return err;
+    }
+    virtual int before_solaris_run(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        return err;
+    }
+    virtual int after_solaris_run(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        return err;
+    }
+    virtual int all_solaris_run(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        if (!(err = before_solaris_run(argc, argv, env))) {
+            int err2 = 0;
+            err = solaris_run(argc, argv, env);
+            if ((err2 = after_solaris_run(argc, argv, env))) {
+                if (!(err)) err = err2;
+            }
+        }
+        return err;
+    }
+    virtual int set_solaris_run(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        run_ = &derives::all_solaris_run;
+        return err;
+    }
+    virtual int solaris_run_set(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        return err;
+    }
+    virtual int unset_solaris_run(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        run_ = 0;
+        return err;
+    }
+    virtual int solaris_run_unset(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        return err;
+    }
+
+    /// ...mach_run
+    virtual int mach_run(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        return err;
+    }
+    virtual int before_mach_run(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        return err;
+    }
+    virtual int after_mach_run(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        return err;
+    }
+    virtual int all_mach_run(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        if (!(err = before_mach_run(argc, argv, env))) {
+            int err2 = 0;
+            err = mach_run(argc, argv, env);
+            if ((err2 = after_mach_run(argc, argv, env))) {
+                if (!(err)) err = err2;
+            }
+        }
+        return err;
+    }
+    virtual int set_mach_run(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        run_ = &derives::all_mach_run;
+        return err;
+    }
+    virtual int mach_run_set(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        return err;
+    }
+    virtual int unset_mach_run(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        run_ = 0;
+        return err;
+    }
+    virtual int mach_run_unset(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        return err;
+    }
+
+    /// ...linux_run
+    virtual int linux_run(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        return err;
+    }
+    virtual int before_linux_run(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        return err;
+    }
+    virtual int after_linux_run(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        return err;
+    }
+    virtual int all_linux_run(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        if (!(err = before_linux_run(argc, argv, env))) {
+            int err2 = 0;
+            err = linux_run(argc, argv, env);
+            if ((err2 = after_linux_run(argc, argv, env))) {
+                if (!(err)) err = err2;
+            }
+        }
+        return err;
+    }
+    virtual int set_linux_run(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        run_ = &derives::all_linux_run;
+        return err;
+    }
+    virtual int linux_run_set(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        return err;
+    }
+    virtual int unset_linux_run(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        run_ = 0;
+        return err;
+    }
+    virtual int linux_run_unset(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        return err;
+    }
+
+    /// ...posix_run
+    virtual int posix_run(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        return err;
+    }
+    virtual int before_posix_run(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        return err;
+    }
+    virtual int after_posix_run(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        return err;
+    }
+    virtual int all_posix_run(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        if (!(err = before_posix_run(argc, argv, env))) {
+            int err2 = 0;
+            err = posix_run(argc, argv, env);
+            if ((err2 = after_posix_run(argc, argv, env))) {
+                if (!(err)) err = err2;
+            }
+        }
+        return err;
+    }
+    virtual int set_posix_run(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        run_ = &derives::all_posix_run;
+        return err;
+    }
+    virtual int posix_run_set(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        return err;
+    }
+    virtual int unset_posix_run(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        run_ = 0;
+        return err;
+    }
+    virtual int posix_run_unset(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        return err;
+    }
+
+    /// ...os_run
+    virtual int os_run(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        return err;
+    }
+    virtual int before_os_run(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        return err;
+    }
+    virtual int after_os_run(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        return err;
+    }
+    virtual int all_os_run(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        if (!(err = before_os_run(argc, argv, env))) {
+            int err2 = 0;
+            err = os_run(argc, argv, env);
+            if ((err2 = after_os_run(argc, argv, env))) {
+                if (!(err)) err = err2;
+            }
+        }
+        return err;
+    }
+    virtual int set_os_run(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        run_ = &derives::all_os_run;
+        return err;
+    }
+    virtual int os_run_set(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        return err;
+    }
+    virtual int unset_os_run(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        run_ = 0;
+        return err;
+    }
+    virtual int os_run_unset(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        return err;
+    }
+
+    /// ...none_run
+    virtual int none_run(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        return err;
+    }
+    virtual int before_none_run(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        return err;
+    }
+    virtual int after_none_run(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        return err;
+    }
+    virtual int all_none_run(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        if (!(err = before_none_run(argc, argv, env))) {
+            int err2 = 0;
+            err = none_run(argc, argv, env);
+            if ((err2 = after_none_run(argc, argv, env))) {
+                if (!(err)) err = err2;
+            }
+        }
+        return err;
+    }
+    virtual int set_none_run(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        run_ = &derives::all_none_run;
+        return err;
+    }
+    virtual int none_run_set(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        return err;
+    }
+    virtual int unset_none_run(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        run_ = 0;
+        return err;
+    }
+    virtual int none_run_unset(int argc, char_t** argv, char_t** env) {
+        int err = 0;
+        return err;
+    }
+
     /// ...windows_os_option...
     virtual int on_set_windows_os_option
     (const char_t* optarg, int optind, int argc, char_t**argv, char_t**env) {
@@ -145,6 +489,12 @@ protected:
     (const char_t* optarg, int optind, int argc, char_t**argv, char_t**env) {
         int err = 0;
         if ((optarg) && (optarg[0])) {
+            if (!(err = set_windows_run(argc, argv, env))) {
+                if (!(err = windows_run_set(argc, argv, env))) {
+                } else {
+                }
+            } else {
+            }
         } else {
         }
         return err;
@@ -178,6 +528,12 @@ protected:
     (const char_t* optarg, int optind, int argc, char_t**argv, char_t**env) {
         int err = 0;
         if ((optarg) && (optarg[0])) {
+            if (!(err = set_osx_run(argc, argv, env))) {
+                if (!(err = osx_run_set(argc, argv, env))) {
+                } else {
+                }
+            } else {
+            }
         } else {
         }
         return err;
@@ -211,6 +567,12 @@ protected:
     (const char_t* optarg, int optind, int argc, char_t**argv, char_t**env) {
         int err = 0;
         if ((optarg) && (optarg[0])) {
+            if (!(err = set_linux_run(argc, argv, env))) {
+                if (!(err = linux_run_set(argc, argv, env))) {
+                } else {
+                }
+            } else {
+            }
         } else {
         }
         return err;
@@ -244,6 +606,12 @@ protected:
     (const char_t* optarg, int optind, int argc, char_t**argv, char_t**env) {
         int err = 0;
         if ((optarg) && (optarg[0])) {
+            if (!(err = set_posix_run(argc, argv, env))) {
+                if (!(err = posix_run_set(argc, argv, env))) {
+                } else {
+                }
+            } else {
+            }
         } else {
         }
         return err;
@@ -277,6 +645,12 @@ protected:
     (const char_t* optarg, int optind, int argc, char_t**argv, char_t**env) {
         int err = 0;
         if ((optarg) && (optarg[0])) {
+            if (!(err = set_mach_run(argc, argv, env))) {
+                if (!(err = mach_run_set(argc, argv, env))) {
+                } else {
+                }
+            } else {
+            }
         } else {
         }
         return err;
@@ -310,6 +684,12 @@ protected:
     (const char_t* optarg, int optind, int argc, char_t**argv, char_t**env) {
         int err = 0;
         if ((optarg) && (optarg[0])) {
+            if (!(err = set_solaris_run(argc, argv, env))) {
+                if (!(err = solaris_run_set(argc, argv, env))) {
+                } else {
+                }
+            } else {
+            }
         } else {
         }
         return err;
@@ -343,6 +723,12 @@ protected:
     (const char_t* optarg, int optind, int argc, char_t**argv, char_t**env) {
         int err = 0;
         if ((optarg) && (optarg[0])) {
+            if (!(err = set_os_run(argc, argv, env))) {
+                if (!(err = os_run_set(argc, argv, env))) {
+                } else {
+                }
+            } else {
+            }
         } else {
         }
         return err;
@@ -376,6 +762,12 @@ protected:
     (const char_t* optarg, int optind, int argc, char_t**argv, char_t**env) {
         int err = 0;
         if ((optarg) && (optarg[0])) {
+            if (!(err = set_none_run(argc, argv, env))) {
+                if (!(err = none_run_set(argc, argv, env))) {
+                } else {
+                }
+            } else {
+            }
         } else {
         }
         return err;
